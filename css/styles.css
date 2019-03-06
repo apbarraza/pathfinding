@@ -1,0 +1,149 @@
+* {
+    font-family: 'Sansita', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+button, input, textarea {font-family: inherit}
+
+#header_box{
+	margin-top: 2%;
+}
+
+p{
+	margin-bottom:1%;
+	margin-top:2%;
+}
+
+#general_properties{
+	display: flex;
+    flex-wrap:wrap;
+	justify-content: space-between;
+}
+.row {
+    margin-bottom: 1%;
+	margin-left: 0.3%;
+    display: flex;
+}
+
+/*#buttons{
+    display: flex;
+    flex-wrap:wrap;
+	justify-content: space-between;
+}*/
+
+button{
+  margin-right:1em;
+  margin-top:1em;	
+  display: inline-block;
+  padding: 0.25em 0.5em;
+  border-radius: 5px;
+}
+
+hr {
+  border: 0; 
+  height: 3%; 
+  background-image: -webkit-linear-gradient(left, #4c4b4b, #8c8b8b, #f0f0f0);
+  background-image: -moz-linear-gradient(left, #4c4b4b, #8c8b8b, #f0f0f0);
+  background-image: -ms-linear-gradient(left, #4c4b4b, #8c8b8b, #f0f0f0);
+  background-image: -o-linear-gradient(left, #4c4b4b, #8c8b8b, #f0f0f0); 
+}
+
+
+#world_column{
+	justify-content:center;
+	display:flex;
+	
+}
+
+
+#world{
+	/*border-width: thin;
+	border-style: solid;
+	border-color: #d3d3d3;
+	background: #fafafa;*/
+   /* overflow: hidden;*/
+	display:flex;
+	position: relative;
+
+	
+	/*Disable text selection*/
+   -moz-user-select: none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+
+   /*
+     Introduced in IE 10.
+     See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
+   */
+   -ms-user-select: none;
+   user-select: none;
+	
+}
+
+.player{
+	margin: 0px;
+	padding: 0px;
+	border: 0px solid #151B54;
+	background:  Teal   ;
+	overflow: hidden;
+	position: absolute;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+	box-shadow: 2px 2px 5px #8c8b8b;
+	box-sizing: border-box;
+}
+
+.player.selected{
+	border-width : thick;
+	background: Grey;
+}
+
+
+.target{
+	margin: 0px;
+	border-color:Teal;
+	border-style:solid;
+	border-width: thick; /*15px 8px 8px 15px;*/
+	background: #e0ffe0;
+	overflow: hidden;
+	position: absolute;
+}
+
+.target.selected{
+	border-color: black;
+	background: Grey;
+}
+
+.path{
+	border-color: black;
+	background: #ffffcc;
+}
+
+.closedSet{
+	border-color: black;
+	background: #e6ffe5; /*lighter green*/
+}
+
+.openSet{
+	border-color: black;
+	background: #ccffcc; /*darker green*/
+}
+
+
+.walkable{
+	margin: 0px;
+	padding: 0px;
+	border: thin solid #d3d3d3;
+	overflow: hidden;
+	position: absolute;
+
+}
+
+.wall{
+	margin: 0px;
+	padding: 0px;
+	border: thin solid #8c8b8b;
+	background: #8c8b8b;
+	overflow: hidden;
+	position: absolute;
+}
